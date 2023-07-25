@@ -347,7 +347,7 @@ if build "yasm" "1.3.0"; then
 fi
 
 if build "nasm" "2.16.01"; then
-  download "https://www.nasm.us/pub/nasm/releasebuilds/2.16.01/nasm-2.16.01.tar.xz"
+  download "https://github.com/netwide-assembler/nasm/archive/refs/tags/nasm-2.16.01.tar.gz"
   execute ./configure --prefix="${WORKSPACE}" --disable-shared --enable-static
   execute make -j $MJOBS
   execute make install
